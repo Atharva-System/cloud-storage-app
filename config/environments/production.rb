@@ -80,4 +80,12 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  FACEBOOK_APP_KEY = '738934649493797'
+  FACEBOOK_APP_KEY_SECRET = 'dbe8a2b2c3bcfe6e791725f30645ffef'
+  DROPBOX_APP_KEY = 'wwrge1uy5qeyxhs'
+  DROPBOX_APP_KEY_SECRET = '4hwbd627j7rd1tg'
+  DROPBOX_APP_MODE = :auto
+  BOX_APP_KEY = 'ul55clll3p81uhosvrcjv0xpl37xh09u'
+  BOX_APP_KEY_SECRET = 'BP8cKMxlV7kTe6B2eGG5yh46vTU4fsUL'
 end

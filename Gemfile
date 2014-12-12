@@ -13,6 +13,7 @@ gem 'dynamic_form'
 gem 'omniauth-facebook', '~> 1.4.1'
 gem 'dropbox-sdk'
 gem 'ruby-box'
+gem 'uglifier'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

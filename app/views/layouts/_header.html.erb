@@ -13,7 +13,7 @@
         </ul>
         <div class="navbar-form pull-right">
           <% if current_user %>
-              <span style="color: #ffffff;">Signed in as <strong><%= current_user.name_or_email %></strong>&nbsp;</span>
+              <span style="color: #ffffff;">Signed in as <%= image_tag("http://graph.facebook.com/#{current_user.uid}/picture") if current_user.facebook_user? %> <strong><%= current_user.name_or_email %></strong>&nbsp;</span>
               <%= link_to "Sign out", signout_path, :class => "btn" %>
           <% end %>
         </div>

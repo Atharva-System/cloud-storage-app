@@ -25,7 +25,7 @@ class User < ActiveRecord::Base
     self.name || self.email
   end
 
-  private
+  # private
 
   def facebook_user?
     provider != nil && uid != nil

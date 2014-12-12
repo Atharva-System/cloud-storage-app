@@ -1,0 +1,5 @@
+2014-12-10 18:30:08 ERROR  : Error connecting to the server: FATAL:  password authentication failed for user "postgres"
+FATAL:  password authentication failed for user "postgres"
+
+2014-12-10 18:48:20 ERROR  : Error connecting to the server: fe_sendauth: no password supplied
+

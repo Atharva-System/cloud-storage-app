@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FooShare</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div>
+  <%= render :partial => "/layouts/header" %>
+  <div class="container">
+    <p>
+    <% flash.each do |name, msg| %>
+        <%= content_tag :div, :class => "alert fade in alert-#{name}" do %>
+            <button type="button" data-dismiss="alert" class="close">×</button>
+            <%= msg  %>
+        <% end %>
+    <% end %>
+    </p>
+    <%= yield %>
+    <hr />
+    <%= render :partial => "/layouts/footer" %>
+  </div> <!-- /container -->
+</div>
+</body>
+</html>

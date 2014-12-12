@@ -6,4 +6,8 @@ class HomeController < ApplicationController
       render :partial=> "/sessions/sign_in", :layout => "application"
     end
   end
+
+  def routing_error
+    redirect_to root_path
+  end
 end

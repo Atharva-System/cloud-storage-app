@@ -63,7 +63,6 @@ class LinkedAccountsController < ApplicationController
         else
           response = account.client.upload_file(file_path, '/') # lookups by id are more efficient
         end
-        # ap response.inspect
         flash[:success] = "#{file.original_filename} - File Uploaded."
       end
     else
@@ -87,4 +86,3 @@ class LinkedAccountsController < ApplicationController
     redirect_to root_path
   end
 end
-

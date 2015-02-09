@@ -5,6 +5,7 @@ class User < ActiveRecord::Base
 
   validates :email, presence: true, unless: :facebook_user?
   validates :password, presence: true, unless: :facebook_user?
+  validates :email, format: {:with => /\A[^@]+@([^@\.]+\.)+[^@\.]+\z/, :message => '^Email is invalid'}, unless: :facebook_user?
   validates :email, uniqueness: {:message => '^Email / password is invalid'}, unless: :facebook_user?
 
   # validates_confirmation_of :password, :if => :password_present?

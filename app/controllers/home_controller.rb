@@ -1,7 +1,7 @@
 class HomeController < ApplicationController
   def index
     if current_user
-      @link_accounts = current_user.linked_accounts.all
+      @link_accounts = current_user.linked_accounts
     else
       render :partial=> "/sessions/sign_in", :layout => "application"
     end

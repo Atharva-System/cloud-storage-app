@@ -22,6 +22,8 @@ Rails.application.routes.draw do
     end
   end
 
+  get 'items/list/*specs', controller: 'items', action: 'list', as: "specs"
+
   match "*path", to: "home#routing_error", via: :all
 
   # The priority is based upon order of creation: first created -> highest priority.

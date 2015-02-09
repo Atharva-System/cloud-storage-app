@@ -4,7 +4,7 @@ class SessionsController < ApplicationController
       session[:user_id] = user.id
       redirect_to root_url
     else
-      @user = User.new(params.require(:user).permit(:email, :password))
+      @user = User.new(allowed_parameters)
       if @user.valid?
         @user.save
         session[:user_id] = @user.id
@@ -25,15 +25,17 @@ class SessionsController < ApplicationController
   end
 
   def oauth_failure
-    flash[:error] = "Access Denied / Permissions error"
+    flash[:error] = t(:access_denied)
     redirect_to root_path
   end
 
   def destroy
     session[:user_id] = nil
-    flash[:message] = "Signout!"
+    flash[:message] = t(:signout)
     redirect_to root_path
   end
+
+  private
 
   def allowed_parameters
     params.require(:user).permit(:email, :password)

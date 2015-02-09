@@ -20,4 +20,16 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  access_denied: "Access Denied / Permissions error"
+  signout: "Signout!"
+
+  aurization_success: "You have successfully authorized with %{name}."
+
+  something_wrong_with_account_destroy: "Something went wrong while disconnect from account."
+  something_wrong_with_file_upload: "Something went wrong while uploading file - %{filename}"
+
+  account_disconnected: "You have successfully disconnected from %{provider}"
+
+  file_select_error: "Please select file to upload."
+  size_exceed: "File size exceeds available space."
+  file_uploaded: "%{filename} - File Uploaded."

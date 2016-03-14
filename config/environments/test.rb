@@ -36,4 +36,12 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+  
+  FACEBOOK_APP_KEY = '321504088033036'
+  FACEBOOK_APP_KEY_SECRET = 'd3d31c32153977b30560dd611503484a'
+  DROPBOX_APP_KEY = 'pnft9gbg865x1md'
+  DROPBOX_APP_KEY_SECRET = 'saqdnsx7gdrn7qr'
+  DROPBOX_APP_MODE = :auto
+  BOX_APP_KEY = 'l2d5je3y1qftp4veq7e28nuuxpe3jbxo'
+  BOX_APP_KEY_SECRET = 'u24eWxs0RxCzxApY1yZbHhJL2alxRdpL'
 end

@@ -12,6 +12,10 @@ development:
   <<: *default
   database: foo_share_development
 
+test:
+  <<: *default
+  database: foo_share_test
+  
 production:
   <<: *default
   database: d6p9m3bf21n5ng

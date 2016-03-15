@@ -1,4 +1,5 @@
 ## Cloud Storage App: ##
+[![Build Status](https://travis-ci.org/atharvasystem/cloud-storage-app.svg?branch=master)](https://travis-ci.org/atharvasystem/cloud-storage-app)
 
 This app is created to list files and folders uploaded to cloud storages like **Box** and **Dropbox**.
 
